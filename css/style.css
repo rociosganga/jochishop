@@ -1,0 +1,431 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    font-family: 'Sniglet', cursive;
+    background-color: rgb(255, 242, 246);
+    font-size: 11px;
+    text-align: center;
+    padding:60px 0px 0px;
+    overflow-y: hidden;
+    overflow-x: hidden
+}
+
+.encabezado{
+    background-color: rgb(241, 123, 159);
+    height: 125px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+}
+
+.barra-nav{
+    display:flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+    max-width: 900px;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-evenly;
+    max-width: 800px;
+    margin: 0px 10px;
+}
+
+.nav-menu{
+    display:flex;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 20px;
+    width: max-content;
+    padding-bottom: 100px;
+}
+
+.nav-menu-link:hover{
+    color:rgb(150, 88, 112);
+}
+
+.nav-menu-link{
+    color: white;
+    text-decoration: none;
+    list-style:none;
+}
+
+.logo{
+    display:flex;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 40px;
+    line-height: 100px;
+}
+
+.imagen{
+    padding-top:40px;
+    border-radius: 50%;
+}
+
+h1{
+    color:palevioletred;
+    font-style:italic;
+}
+
+
+.texto-centrado{
+    text-align: center;
+}
+.tarjeta-inicio{
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 10px;
+    background-color: rgb(240, 203, 215);
+}
+
+.tarjetas{
+    display:flex;
+    justify-content: space-between;
+    margin:auto;
+    padding: 20px 40px
+}
+
+.botones{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0px 40px 20px 40px
+}
+
+li{
+    list-style:none
+}
+
+.boton1{
+    background-color: paleturquoise;
+    font-weight:bolder;
+    font-family: 'Sniglet', cursive;
+    border-radius: 50%;
+    border-style:none;
+    width: 100px;
+    height:100px
+}
+
+.boton2{
+    background-color: palevioletred;
+    border-radius: 50%;
+    font-family: 'Sniglet', cursive;
+    font-weight:bolder;
+    border-style:none;
+    width: 100px;
+    height:100px;
+}
+
+.boton3{
+    background-color: palegoldenrod;
+    border-radius: 50%;
+    font-weight:bolder;
+    font-family: 'Sniglet', cursive;
+    border-style:none;
+    width: 100px;
+    height:100px
+}
+
+
+.barra-busqueda {
+    font-family: 'Sniglet', cursive;
+    display:flex;
+    position: relative;
+    margin: 20px auto;
+    width: 70%;
+    height: 50px;
+    box-shadow:
+    1px 1px 0 rgb(150, 88, 112),
+    2px 2px 0 rgb(150, 88, 112),
+    3px 3px 0 rgb(150, 88, 112),
+    4px 4px 0 rgb(150, 88, 112),
+    5px 5px 0 rgb(150, 88, 112),
+    6px 6px 0 rgb(150, 88, 112),
+    7px 7px 0 rgb(150, 88, 112);
+}
+
+.barra-busqueda>input[type=text],
+.barra-busqueda>button {
+    display:block;
+    font-family: 'Sniglet', cursive;
+}
+
+.barra-busqueda>input[type=text] {
+    font-family: 'Sniglet', cursive;
+    flex:1;
+    padding:10px;
+    width: 400px;
+    border:0.2em solid rgb(211, 130, 161);
+}
+
+.barra-busqueda>button {
+    font-family: 'Sniglet', cursive;
+    padding:0.6em 0.8em;
+    background-color:rgb(211, 130, 161);
+    color:white;
+    border:none;
+}
+
+.pie{
+    background-color: rgb(241, 123, 159);
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.pie2{
+    display:flex;
+    justify-content: space-evenly;
+    margin:auto;
+    padding: 20px 0
+}
+
+.redes{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.productos{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.faq{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.jochishop{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(192, 79, 122);
+    margin: auto;
+    text-decoration: solid;
+}
+
+.carrito{
+    margin:auto;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.carrito:hover{
+    transform:rotateY(-360deg);
+    transition-duration: 2s;
+    
+}
+
+.horarios{
+    margin: auto;
+}
+
+.foto-perro{
+    max-width: 600px;
+    border: solid 10px rgb(79, 214, 255);
+}
+
+/*Carrusel de Imagenes - Nosotros*/
+.carrusel-nosotros {
+    margin: auto;
+    width: 900px;
+    padding: 40px;  
+}
+
+ul.carrusel{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.carrusel li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+}
+
+ul.carrusel li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.carrusel li:first-child {
+    opacity: 1;
+}
+
+ul.carrusel li:target {
+    opacity: 1;
+}
+
+.menu-carrusel {
+    text-align: center;
+    margin: 0
+
+}
+
+.menu-carrusel li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-carrusel li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 100%;
+}
+
+.titulo-nosotros{
+    color:rgb(74, 206, 250);
+    padding:20px 0px
+}
+
+.lorem-nosotros{
+    margin: auto;
+    font-size: 16px
+}
+
+main{
+    width: 80%;
+    margin: auto
+}
+
+/*Tarjetas de PRODUCTO*/
+
+.catalogo-productos{
+    display:flex;
+    justify-content: space-evenly;
+}
+.tarjeta-producto{
+    width:90%;
+    margin:50px 30px;
+    background:#ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
+}
+
+.tarjeta-producto .imagen-producto img{width:100%;}
+
+.tarjeta-producto .imagen-producto{
+    position:relative;
+    margin:0px;
+}
+
+.tarjeta-producto .info-producto{padding:0px 25px;}
+.tarjeta-producto .info-producto .titulo-producto {
+    font-size:18px;
+    font-weight:700;
+    color:#131313;
+}
+.tarjeta-producto .info-producto .descripcion{
+    font-size:15px;
+    font-weight:400;
+    margin-bottom: 30px;
+    color:#414141;
+}
+.tarjeta-producto .info-producto .precio{
+    background:#FFC069;
+    padding:8px 10px;
+    border-radius:30px;
+    font-weight:400;
+    font-size:13px;
+}
+    .boton-carrito{
+    background:#FFC069;
+    color:#ffffff;
+    padding:10px 0px;
+    margin-top:30px;
+    text-decoration:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size: 16px
+}
+
+.titulo-productos{
+    color:#FFC069 ;
+    padding:20px 0px
+}
+
+.titulo-sucursales{
+    color: rgb(170, 116, 231);
+    padding:20px 0px
+
+}
+
+.subtitulo-sucursales{
+    color: rgb(194, 190, 199);
+    padding-bottom: 20px
+}
+
+.seccion-sucursales{
+    display:flex;
+    justify-content: space-around;
+}
+
+.lista-sucursales{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.sucursal{
+    padding: 20px 0;
+}
+
+.titulo-servicios{
+    color:rgb(177, 243, 168);
+    padding: 20px 0px
+}
+
+.lorem-servicios{
+    font-size: 13px;
+}
+
+.lista-servicios{
+    display:flex;
+    padding: 80px
+}
+
+.foto-servicio{
+    max-width: 300px;
+}
+
+.servicio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: inherit;
+    gap: 30px;
+    font-size: 13px;
+    padding: 0px 20px;
+}
