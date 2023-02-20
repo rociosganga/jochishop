@@ -3,40 +3,95 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="shortcut icon" href="./imagenes/tienda-de-animales.png" type="Icono Tienda Mascotas">      
         <title>Inicio - JochiShop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Sniglet&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/4d44ebef75.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
     </head>
 <body>
     <header class="encabezado">   
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo nav-menu-link">Jochi</a>
-                <div class="barra-busqueda">
-                    <input type="text" placeholder="Qué estás buscando?"/>
-                    <button type="button">Veamos!</button>
-                </div>                
-                <div class="carrito">
-                    <a href=""><img src="./imagenes/carrito-compra.png" alt=""></a>
-                </div>                    
-            </nav>
+        <div class="container d-flex justify-content-center top">
+            <a href="index.html" class="logo nav-menu-link">Jochi</a>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="¿Qué estás buscando?"/>
+                <button type="button">V</button>
+            </div>                
+            <div class="carrito">
+                <a href=""><img src="./imagenes/carrito-compra.png" alt=""></a>
+            </div>                    
         </div>
-            <ul class="nav-menu">
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-xl cabesa">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./paginas/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Alimento</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                            </ul>
+                            </li>                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./paginas/servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servicios </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Peluquería</a></li>
+                                <li><a class="dropdown-item" href="#">Vacunación</a></li>
+                                <li><a class="dropdown-item" href="#">Urgencias</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./paginas/sucursales.html">Sucursales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>       
+            <!-- <ul class="nav-menu">
                 <li class="nav-menu-item"><a class="nav-menu-link" href="/index.html">Inicio</a></li>
                 <li class="nav-menu-item"><a class="nav-menu-link" href="./paginas/nosotros.html">Nosotros</a></li>
                 <li class="nav-menu-item"><a class="nav-menu-link" href="./paginas/productos.html">Productos</a></li>
                 <li class="nav-menu-item"><a class="nav-menu-link" href="./paginas/servicios.html">Servicios</a> </li>
                 <li class="nav-menu-item"><a class="nav-menu-link" href="./paginas/sucursales.html">Sucursales</a></li>
-            </ul>
+            </ul> -->
     </header>
 
-    <main>          
-        <img class="imagen" src="https://cdn.upsocl.com/wp-content/uploads/imverde/2015/01/o-PIT-BULL-facebook.jpg" alt="">
-        <section class="container tarjetas"> 
+    <main>
+        <!-- <div class="row justify-content-between m-4">
+            <div class="col-8 col-md-4 offset-md-4 col-lg-4 offset-lg-0">
+                <div class="tarjeta-inicio">
+                    <h2 class="texto-centrado">MEDIOS DE PAGO</h2>
+                    <p class="texto-centrado">CRÉDITO - DEBITO - EFECTIVO</p>
+                </div>
+            </div>
+            <div class="col-8 col-md-4 offset-md-4 col-lg-4 offset-lg-0">
+                <div class="tarjeta-inicio">
+                    <h2 class="texto-centrado">ENVIOS EN EL DÍA</h2>
+                </div>
+            </div>
+            <div class="col-8 col-md-4 offset-md-4 col-lg-4 offset-lg-0">
+                <div class="tarjeta-inicio">
+                    <h2 class="texto-centrado">20% DE DESCUENTO pagando en EFECTIVO en sucursal</h2>
+                </div>
+            </div>
+        </div>           -->
+        <!-- <img class="imagen" src="https://cdn.upsocl.com/wp-content/uploads/imverde/2015/01/o-PIT-BULL-facebook.jpg" alt=""> -->
+        <!-- <section class="container tarjetas"> 
             <div class="tarjeta-inicio">
                 <h2 class="texto-centrado">MEDIOS DE PAGO</h2>
                 <p class="texto-centrado">CRÉDITO - DEBITO - EFECTIVO</p>
@@ -52,48 +107,56 @@
             <a href="./paginas/productos.html"><button class="boton1">OFERTAS</button></a>
             <a href="./paginas/productos.html"><button class="boton2">NUEVO</button></a>
             <a href="./paginas/nosotros.html"><button class="boton3">FAQ</button></a>
-        </section>
+        </section> -->
     </main>
-    <footer class="pie">
-        <div class="pie2"> 
-            <div class="container redes">
-                <ul>
-                    <li>REDES SOCIALES</li>
-                    <li><a class="nav-menu-link" href="#">Facebook</a></li>
-                    <li><a class="nav-menu-link" href="#">Twitter</a></li>
-                    <li><a class="nav-menu-link" href="#">Instagram</a></li>
-                    <li><a class="nav-menu-link" href="#">WhatsApp</a></li>
-                    <li><a class="nav-menu-link" href="#">E-mail</a></li>
-                </ul>
-            </div>
-            <div class="container productos">
-                <ul>
-                    <li>PRODUCTOS</li>
-                    <li><a class="nav-menu-link" href="#">Alimentos</a></li>
-                    <li><a class="nav-menu-link" href="#">Accesorios</a></li>
-                    <li><a class="nav-menu-link" href="#">Ropa</a></li>
-                </ul>
-            </div>
-            <div class="container faq">
-                <ul>
-                    <li>AYUDA</li>
-                    <li><a class="nav-menu-link" href="#">¿Cómo comprar?</a></li>
-                    <li><a class="nav-menu-link" href="#">Devoluciones</a></li>
-                    <li><a class="nav-menu-link" href="#">Términos y Condiciones.</a></li> 
-                </ul>
-            </div>
-            <div class="container horarios">
-                <ul>
-                    <li><span><b>LUN. A VIER. 9 A 18HS</b></span></li>
-                    <li><span><b>SABADOS 9 A 13HS.</b></span></li>
-                    <li><span><b>AV. SAN MARTIN 1523</b></span></li>
-                </ul>
+    <footer class="pie pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-4 pb-2 ps-5">
+                    <h5>Seguinos en nuestras redes</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-menu-link" href="#">Facebook</a></li>
+                        <li><a class="nav-menu-link" href="#">Twitter</a></li>
+                        <li><a class="nav-menu-link" href="#">Instagram</a></li>
+                        <li><a class="nav-menu-link" href="#">WhatsApp</a></li>
+                        <li><a class="nav-menu-link" href="#">E-mail</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4 offset-lg-4">
+                    <h5 class="ps-4">Productos</h5>
+                    <ul class="d-flex flex-column justify-content-evenly">
+                        <li><a class="nav-menu-link" href="#">Alimentos</a></li>
+                        <li><a class="nav-menu-link" href="#">Accesorios</a></li>
+                        <li><a class="nav-menu-link" href="#">Ropa</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="jochishop">
-            <p>Copyright © 2023 JochiShop. Rocio Sganga.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-4 pb-2">
+                    <h5 class="ps-4">Ayuda</h5>
+                    <ul class="d-flex flex-column justify-content-evenly">
+                        <li><a class="nav-menu-link" href="#">¿Cómo comprar?</a></li>
+                        <li><a class="nav-menu-link" href="#">Devoluciones</a></li>
+                        <li><a class="nav-menu-link" href="#">Términos y Condiciones</a></li> 
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4 offset-lg-4 pe-4">
+                    <h5 class="ps-4">Horarios</h5>
+                    <ul>
+                        <li><span><b>LUN. A VIER. 9 A 18HS</b></span></li>
+                        <li><span><b>SABADOS 9 A 13HS.</b></span></li>
+                        <li><span><b>AV. SAN MARTIN 1523</b></span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </footer>    
+        <div class="d-flex justify-content-evenly jochishop">
+            <p class="m-0 p-0">Copyright © 2023 JochiShop. Rocio Sganga.</p>
+        </div>
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
 </body>
 </html>
 

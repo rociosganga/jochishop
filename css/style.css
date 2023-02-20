@@ -8,25 +8,18 @@
 html,body{
     font-family: 'Sniglet', cursive;
     background-color: rgb(255, 242, 246);
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
-    padding:60px 0px 0px;
 }
 
 .encabezado{
     background-color: rgb(241, 123, 159);
-    height: 125px;
-    position: fixed;
+    position: sticky;
     width: 100%;
-    top:0;
-    left: 0;
-    right: 0;
 }
 
-.container{
-    width: 80%;
-    margin:0 auto;
-    max-width: 900px;
+.cabesa{
+    background-color:  rgb(236, 64, 116);
 }
 
 .nav{
@@ -39,6 +32,10 @@ html,body{
 .nav-menu{
     display:flex;
     justify-content: center
+}
+
+.nav-item{
+    margin: 0 6.5rem;
 }
 
 .nav-menu-item{
@@ -59,15 +56,14 @@ html,body{
 }
 
 .logo{
-    display:flex;
     font-size: 30px;
     font-weight: bold;
-    padding: 0px 40px;
     line-height: 100px;
+    margin: 0px 2.5rem 0px 0px
 }
 
 .imagen{
-    padding-top:40px;
+    padding-top: 40px;
     border-radius: 50%;
 }
 
@@ -83,9 +79,9 @@ h1{
 .tarjeta-inicio{
     border: 1px solid gray;
     border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    margin: 0 10px;
+    padding: 1rem;
+    width: 20rem;
+    margin: 5px 0.5rem;
     background-color: rgb(240, 203, 215);
 }
 
@@ -139,10 +135,11 @@ li{
 
 .barra-busqueda {
     font-family: 'Sniglet', cursive;
-    display:flex;
+    display: flex;
     position: relative;
-    margin: 20px auto;
-    width: 70%;
+    margin: 20px 0px;
+    max-width: 800px;
+    width: 50%;
     height: 50px;
     box-shadow:
     1px 1px 0 rgb(150, 88, 112),
@@ -156,15 +153,14 @@ li{
 
 .barra-busqueda>input[type=text],
 .barra-busqueda>button {
-    display:block;
     font-family: 'Sniglet', cursive;
 }
 
 .barra-busqueda>input[type=text] {
     font-family: 'Sniglet', cursive;
     flex:1;
-    padding:10px;
-    width: 400px;
+    padding: 10px;
+    width: 20px;
     border:0.2em solid rgb(211, 130, 161);
 }
 
@@ -178,6 +174,8 @@ li{
 
 .pie{
     background-color: rgb(241, 123, 159);
+    box-shadow: 3px 0 10px 10px rgba(189, 20, 223, 0.2);
+    font-size: 0.8rem;
     width: 100%;
     left: 0;
     right: 0;
@@ -189,7 +187,7 @@ li{
     display:flex;
     justify-content: space-evenly;
     margin:auto;
-    padding: 20px 0
+    padding: .5rem;
 }
 
 .redes{
@@ -310,7 +308,7 @@ ul.carrusel li:target {
 
 main{
     width: 80%;
-    margin: auto
+    margin: auto;
 }
 
 /*Tarjetas de PRODUCTO*/
@@ -423,4 +421,28 @@ main{
     gap: 30px;
     font-size: 13px;
     padding: 0px 20px;
+}
+
+.top{
+    padding-left: 5rem;
+}
+
+@media screen and (min-width: 541px){
+    body{
+        font-size: 16px;
+    }
+    main{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 915px){
+    .barra-busqueda{
+        width: 100%;
+        margin: auto;
+    }
+    .top{
+        padding: 0 5rem;
+        margin: auto;
+    }
 }
