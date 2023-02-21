@@ -37,9 +37,6 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/paginas/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
                             <ul class="dropdown-menu">
@@ -55,6 +52,9 @@
                                 <li><a class="dropdown-item" href="/paginas/servicios.html">Vacunación</a></li>
                                 <li><a class="dropdown-item" href="/paginas/servicios.html">Urgencias</a></li>
                             </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/paginas/sucursales.html">Sucursales</a>
@@ -80,12 +80,12 @@
             </div>
         </div>
         <div class="row m-0 p-0 pb-5 justify-content-evenly align-items-center">
-                <div class="col-12 col-md-4 offset-md-1">
+                <div class="col-8 col-md-5 offset-md-2 ">
                     <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9085391233148!2d-58.451298099999995!3d-34.6064742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0ff4664241%3A0xd5eb8c3cfd1e581d!2sAv.%20S.%20Mart%C3%ADn%201532%2C%20C1416CRQ%20CABA!5e0!3m2!1ses!2sar!4v1675118925090!5m2!1ses!2sar" width="400" height="400" style="border:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9085391233148!2d-58.451298099999995!3d-34.6064742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0ff4664241%3A0xd5eb8c3cfd1e581d!2sAv.%20S.%20Mart%C3%ADn%201532%2C%20C1416CRQ%20CABA!5e0!3m2!1ses!2sar!4v1675118925090!5m2!1ses!2sar" width="250" height="250" style="border:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                    <div class="accordion accordion-flush col-12 col-md-4 p-0" id="accordionFlushExample">
+                    <div class="accordion accordion-flush col-12 col-md-5 p-5" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -159,21 +159,23 @@
                 </div>
                 <h2 class="segundo-titulo-sucursales">Envíanos tu consulta!</h2>
                 <p class="tercer-titulo-sucursales"> A la brevedad te contestaremos.</p>
-                <div class="col-12 col-md-4 mb-3 align-items-left">
-                    <div class="container form">
-                        <label for="exampleFormControlInput1" class="titulo-form">Nombre</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-                        <label for="exampleFormControlInput1" class="titulo-form">Apellido</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="titulo-form">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="mail@tumail.com">
+                <div class="row justify-content-center m-0 p-0">
+                    <div class="col-12 col-md-4 mb-3">
+                        <div class="container form d-flex flex-column">
+                            <label for="exampleFormControlInput1" class="titulo-form align-self-start">Nombre</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                            <label for="exampleFormControlInput1" class="titulo-form align-self-start">Apellido</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+                            <div class="mb-3 d-flex flex-column align-items-start">
+                                <label for="exampleFormControlInput1" class="titulo-form">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="mail@tumail.com">
+                            </div>
+                            <div class="mb-3 d-flex flex-column align-items-start">
+                                <label for="exampleFormControlTextarea1" class="titulo-form">Tu consulta</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Escribe tu reclamo/consulta aquí..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="titulo-form">Tu consulta</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Escribe tu reclamo/consulta aquí..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary boton-enviar">Enviar</button>
                     </div>
                 </div>
         </div>

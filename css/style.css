@@ -63,7 +63,8 @@ html,body{
 }
 
 .logo-jochi{
-    width: 60%
+    width: 60%;
+    padding: 0px 2px
 }
 
 .imagen{
@@ -245,9 +246,7 @@ li{
 
 /*Carrusel de Imagenes - Nosotros*/
 .carrusel-nosotros {
-    margin: auto;
-    width: 900px;
-    padding: 40px;  
+    width: 500px; 
 }
 
 ul.carrusel{
@@ -304,7 +303,7 @@ ul.carrusel li:target {
 
 .titulo-nosotros{
     color:rgb(74, 206, 250);
-    padding:20px 0px
+    padding: 30px
 }
 
 .lorem-nosotros{
@@ -506,11 +505,11 @@ ul.carrusel li:target {
 }
 
 .mapa{
-    width: 100%
+    width: 100px;
 }
 
 .form{
-    width: 450px;
+    width: 80%;
 }
 
 /* Formato de la scrollbar */
