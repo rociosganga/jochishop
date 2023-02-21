@@ -512,6 +512,14 @@ ul.carrusel li:target {
     width: 80%;
 }
 
+.btn{
+    background-color: #f3d962;
+    border: #f7b72f;
+}
+.btn:hover{
+    background-color: #c27d22;
+}
+
 /* Formato de la scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
