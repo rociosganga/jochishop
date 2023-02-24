@@ -59,7 +59,7 @@ html,body{
     font-size: 30px;
     font-weight: bold;
     line-height: 100px;
-    margin: 0px 2.5rem 0px 0px
+    padding: 0px 2.5rem 0px 0px
 }
 
 .logo-jochi{
@@ -416,6 +416,14 @@ ul.carrusel li:target {
     padding: 80px
 }
 
+.titulo-servicios{
+    padding-top: 30px
+}
+
+.subtitlo-servicio{
+    color: #e42f9e;
+    font-size: 16px
+}
 .foto-servicio{
     max-width: 300px;
 }
@@ -548,9 +556,6 @@ ul.carrusel li:target {
 @media screen and (min-width: 541px){
     body{
         font-size: 16px;
-    }
-    main{
-        width: 100%;
     }
 }
 
