@@ -246,7 +246,9 @@ li{
 
 /*Carrusel de Imagenes - Nosotros*/
 .carrusel-nosotros {
-    width: 500px; 
+    width: 80%; 
+    padding: 0;
+    margin: 2rem;
 }
 
 ul.carrusel{
@@ -303,12 +305,12 @@ ul.carrusel li:target {
 
 .titulo-nosotros{
     color:rgb(74, 206, 250);
-    padding: 30px
+    padding: 1rem 0 .5rem 0;
 }
 
 .lorem-nosotros{
-    margin: auto;
-    font-size: 16px
+    margin: 2rem;
+    padding: 0;
 }
 
 /*Tarjetas de PRODUCTO*/
@@ -460,7 +462,7 @@ ul.carrusel li:target {
 }
 .card{
 	width: 100%;
-	margin: 10px;
+	margin: 2rem;
 	border-radius: 2rem;
 	overflow: hidden;
 	background:#fff;
