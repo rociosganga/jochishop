@@ -463,7 +463,12 @@ ul.carrusel li:target {
     flex-shrink: inherit;
     gap: 15px;
     padding: 0px 20px 30px 20px;
-    border: 2px solid red;
+    margin: 30px 0;
+    border-radius: 58px;
+    background: #ffd6e0;
+    box-shadow:  -11px 11px 22px #ccabb3,
+                11px -11px 22px #ffffff;
+
 }
 
 .top{
