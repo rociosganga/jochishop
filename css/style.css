@@ -22,6 +22,12 @@ html,body{
     background-color:  rgb(236, 64, 116);
 }
 
+.carrusel-index{
+    width: 600;
+    height: 800px;
+    margin-top: 10px;
+    margin-bottom: 50px
+}
 .nav{
     display:flex;
     justify-content:space-evenly;
@@ -34,9 +40,7 @@ html,body{
     justify-content: center
 }
 
-.nav-item{
-    margin: 0 6.5rem;
-}
+
 
 .nav-menu-item{
     font-size: 18px;
@@ -95,6 +99,13 @@ h1{
     justify-content: space-between;
     margin:auto;
     padding: 20px 40px
+}
+
+.subtitulo-card-inicio1{
+    color:#f7b72f
+}
+.subtitulo-card-inicio2{
+    color:rgb(10, 134, 184)
 }
 
 .botones{
@@ -303,7 +314,7 @@ ul.carrusel li:target {
     border-radius: 100%;
 }
 
-.titulo-nosotros{
+.titulo-blog{
     color:rgb(74, 206, 250);
     padding: 1rem 0 .5rem 0;
 }
@@ -381,6 +392,14 @@ ul.carrusel li:target {
     font-size: 15px;
     padding: 0px;
 
+}
+
+.subtitulo-index-1{
+    color:rgb(170, 116, 231)
+}
+
+.subtitulo-index-2{
+    color:#f7b72f
 }
 
 .segundo-titulo-sucursales{
@@ -504,6 +523,47 @@ ul.carrusel li:target {
 	color: #fff;
 }
 
+
+.fotoblog{
+    width: 85%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.card-blog {
+    cursor: pointer;
+    width: 300px;
+    margin: 30px;
+    height: 450px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(172, 218, 233);
+    transition: all .3s;
+    box-shadow: 12px 12px 2px 1px lightskyblue;
+   }
+   
+   .card-blog:hover {
+    box-shadow: -12px 12px 2px -1px rgb(103, 185, 212);
+   }
+
+   .texto-cardsblog{
+    margin:5px
+   }
+
+
+   .botonblog{
+    background-color: rgb(97, 196, 230);
+    border: rgb(97, 196, 230)
+   }
+   .btn-secondary{
+    background-color: rgb(97, 196, 230);
+    border: rgb(97, 196, 230)
+   }
+   .botonblog:hover{
+    background-color: rgb(77, 158, 185)
+   }
+
 .accordion-button{
     background-color: rgba(218, 201, 240, 0.61);
     color: rgba(37, 8, 75, 0.61);
@@ -515,18 +575,23 @@ ul.carrusel li:target {
 }
 
 .mapa{
-    width: 100px;
+    width: 100%;
 }
 
 .form{
     width: 80%;
+    border-radius: 2px;
+}
+.nav-item{
+    text-align:left;
+    margin-left: 15px
 }
 
-.btn{
+.botonproducto{
     background-color: #f3d962;
     border: #f7b72f;
 }
-.btn:hover{
+.botonproducto:hover{
     background-color: #c27d22;
 }
 
@@ -548,9 +613,6 @@ ul.carrusel li:target {
 	.container-card{
 		flex-wrap: wrap;
 	}
-	.card{
-		margin: 15px;
-	}
 }
 
 
@@ -569,5 +631,35 @@ ul.carrusel li:target {
     .top{
         padding: 0 5rem;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .card-blog{
+        width: 250px;
+        height: 350px
+    }
+    .texto-cardsblog{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px){
+    .card-blog{
+        width:200px;
+        height: 300px
+    }
+    .texto-cardsblog{
+        font-size: 10px
+    }
+    .botonblog{
+        width: 60px;
+        font-size: 10px
+
+    }
+}
+@media screen and (min-width: 1200px){
+    .nav-item{
+        margin: 0 6.5rem;
     }
 }

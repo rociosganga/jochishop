@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-        <link rel="shortcut icon" href="imagenes/tienda-de-animales.png" type="Icono Tienda Mascotas">      
+        <link rel="shortcut icon" href="./imagenes/tienda-de-animales.png" type="Icono Tienda Mascotas">      
         <title>Inicio - JochiShop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,14 +34,14 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav justify-content-start">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle" href="./paginas/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./paginas/productos.html">Alimento</a></li>
+                                <li class="text-align-start"><a class="dropdown-item" href="./paginas/productos.html">Alimento</a></li>
                                 <li><a class="dropdown-item" href="./paginas/productos.html">Accesorios</a></li>
                                 <li><a class="dropdown-item" href="./paginas/productos.html">Juguetes</a></li>
                             </ul>
@@ -55,10 +55,10 @@
                             </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="./paginas/blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./paginas/sucursales.html">Sucursales</a>
+                                <a class="nav-link active" aria-current="page" href="./paginas/about.html">Sobre Nosotros</a>
                             </li>
                         </ul>
                     </div>
@@ -68,7 +68,8 @@
     </header>
 
     <main>
-        <div class="row justify-content-center p-4 m-auto">
+        <section class="container-fluid">
+        <div class="row justify-content-center p-0 m-4 carrusel-index">
             <div class="col-lg-8 d-flex justify-content-center align-items-center">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
@@ -98,37 +99,40 @@
                 </div>
             </div>
         </div>
-        <div class="row align-items-center justify-content-center m-5">
-            <div class="col-8 col-md-8 col-lg-4 offset-lg-0">
-                <div class="card">
-                    <div class="contenido-card">
-                        <h3>MEDIOS DE PAGO</h3>
-                        <p>CRÉDITO - DEBITO - EFECTIVO</p>
+        </section>
+        <section class="container-fluid">
+            <div class="row align-items-center justify-content-center m-6">
+                <div class="col-8 col-md-8 col-lg-3 offset-lg-0">
+                    <div class="card">
+                        <div class="contenido-card">
+                            <h3>MEDIOS DE PAGO</h3>
+                            <p class="subtitulo-index-1">CRÉDITO - DEBITO - EFECTIVO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-8 col-lg-3 offset-lg-0">
+                    <div class="card">
+                        <div class="contenido-card">
+                            <h3>ENVIOS EN EL DÍA</h3>
+                            <p class="subtitulo-index-2">PARA CABA Y GBA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-8 col-lg-3 offset-lg-0">
+                    <div class="card">
+                        <div class="contenido-card">
+                            <h3>15% DE DESCUENTO</h3>
+                            <p>LUNES - MIERCOLES - VIERNES</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col-md-8 col-lg-4 offset-lg-0">
-                <div class="card">
-                    <div class="contenido-card">
-                        <h3>MEDIOS DE PAGO</h3>
-                        <p>CRÉDITO - DEBITO - EFECTIVO</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 col-md-8 col-lg-4 offset-lg-0">
-                <div class="card">
-                    <div class="contenido-card">
-                        <h3>MEDIOS DE PAGO</h3>
-                        <p>CRÉDITO - DEBITO - EFECTIVO</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <section class="container botones">
-            <a href="./paginas/productos.html"><button class="boton1">OFERTAS</button></a>
-            <a href="./paginas/productos.html"><button class="boton2">NUEVO</button></a>
-            <a href="./paginas/nosotros.html"><button class="boton3">FAQ</button></a>
-        </section> -->
+        </section>
+        <section>
+            <h2 class="segundo-titulo-inicio">ENCONTRALO POR MARCA</h2>
+            <p class="boton1">Cochiperro</p>
+
+        </section>
     </main>
     <footer class="pie pt-4 fixed">
         <div class="container">
