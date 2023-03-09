@@ -429,21 +429,27 @@ ul.carrusel li:target {
 }
 
 .lorem-servicios{
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .lista-servicios{
     display:flex;
-    padding: 80px
+    padding: 40px;
+    flex-direction:column
 }
 
 .titulo-servicios{
     padding-top: 30px
 }
 
-.subtitlo-servicio{
+.subtitulo-servicio{
     color: #e42f9e;
-    font-size: 16px
+    font-size: 30px
+}
+
+.lore-servicio{
+    font-size: 20px;
+    margin: 0 40px;
 }
 .foto-servicio{
     max-width: 300px;
@@ -455,9 +461,9 @@ ul.carrusel li:target {
     align-items: center;
     justify-content: center;
     flex-shrink: inherit;
-    gap: 30px;
-    font-size: 13px;
-    padding: 0px 20px;
+    gap: 15px;
+    padding: 0px 20px 30px 20px;
+    border: 2px solid red;
 }
 
 .top{
@@ -580,7 +586,6 @@ ul.carrusel li:target {
 
 .form{
     width: 80%;
-    border-radius: 2px;
 }
 .nav-item{
     text-align:left;
