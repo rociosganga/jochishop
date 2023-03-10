@@ -118,6 +118,10 @@ li{
     list-style:none
 }
 
+.botones-index{
+    margin: 50px
+}
+
 .boton1{
     background-color: paleturquoise;
     font-weight:bolder;
@@ -125,7 +129,7 @@ li{
     border-radius: 50%;
     border-style:none;
     width: 100px;
-    height:100px
+    height:100px;
 }
 
 .boton2{
@@ -256,10 +260,13 @@ li{
 }
 
 /*Carrusel de Imagenes - Nosotros*/
+
+.titulo-nosotros{
+    color:#aa74e7
+}
 .carrusel-nosotros {
-    width: 80%; 
+    width: 70%; 
     padding: 0;
-    margin: 2rem;
 }
 
 ul.carrusel{
@@ -320,10 +327,18 @@ ul.carrusel li:target {
 }
 
 .lorem-nosotros{
-    margin: 2rem;
-    padding: 0;
+    padding: 10px;
+    color: rgb(109, 109, 109);
+    font-size: 20px
 }
 
+.titulo-nosotros{
+    margin-top: 30px;
+}
+
+.formulario-nosotros{
+    margin-bottom: 30px
+}
 /*Tarjetas de PRODUCTO*/
 
 .catalogo-productos{

@@ -19,7 +19,7 @@
     </head>
 <body>
     <header class="encabezado fixed-top">   
-        <div class="container d-flex justify-content-center top">
+        <div class="header-top">
             <a href="index.html" class="logo nav-menu-link"><img class="logo-jochi" src="./imagenes/LOGO-JOCHI.png" alt=""></a>
             <div class="barra-busqueda">
                 <input type="text" placeholder="¿Qué estás buscando?"/>
@@ -28,9 +28,18 @@
                     </a>
                 </button>
             </div>                
-            <div class="carrito">
+            <div class="carrito align-self-center">
                 <a href=""><img src="./imagenes/carrito-compra.png" alt=""></a>
             </div>                    
+        </div>
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="barra-busqueda-mobile">
+                <input type="text" placeholder="¿Qué estás buscando?"/>
+                <button type="button">
+                    <a href=""><img src="./imagenes/lupa.png" alt="">
+                    </a>
+                </button>
+            </div>  
         </div>
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-xl cabesa">
@@ -73,9 +82,8 @@
     </header>
 
     <main>
-        <section class="container-fluid">
-        <div class="row justify-content-center p-0 m-4 carrusel-index">
-            <div class="col-lg-8 d-flex justify-content-center align-items-center">
+        <section class="container-fluid m-0 p-0">
+        <div class="justify-content-center p-0 m-4 carrusel-index">
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -102,12 +110,11 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            </div>
         </div>
         </section>
         <section class="container-fluid">
-            <div class="row align-items-center justify-content-center m-6">
-                <div class="col-8 col-md-8 col-lg-3 offset-lg-0">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-8 col-lg-3 offset-lg-0">
                     <div class="card">
                         <div class="contenido-card">
                             <h3>MEDIOS DE PAGO</h3>
@@ -115,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-md-8 col-lg-3 offset-lg-0">
+                <div class="col-12 col-md-8 col-lg-3 offset-lg-0">
                     <div class="card">
                         <div class="contenido-card">
                             <h3>ENVIOS EN EL DÍA</h3>
@@ -123,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-md-8 col-lg-3 offset-lg-0">
+                <div class="col-12 col-md-8 col-lg-3 offset-lg-0">
                     <div class="card">
                         <div class="contenido-card">
                             <h3>15% DE DESCUENTO</h3>
@@ -134,8 +141,14 @@
             </div>
         </section>
         <section>
-            <h2 class="segundo-titulo-inicio">ENCONTRALO POR MARCA</h2>
-            <p class="boton1">Cochiperro</p>
+            <h2 class="segundo-titulo-inicio">ENCONTRALO MAS RAPIDO</h2>
+            <div class="botones-index row col-12 p-4">
+                <div class="d-flex justify-content-evenly">
+                    <div class="d-flex align-items-center boton1"><p class="text-center">NUEVAS MARCAS</p></div>
+                    <div class="d-flex align-items-center justify-content-center boton2"><p class="text-center">OFERTAS</p></div>
+                    <div class="d-flex align-items-center justify-content-center boton3"><p class="text-center">FAQ</p></div>
+                </div>
+            </div>
 
         </section>
     </main>

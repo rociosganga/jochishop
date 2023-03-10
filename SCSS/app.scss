@@ -4,20 +4,21 @@ $color_3: palevioletred;
 $color_4: #f7b72f;
 $color_5: rgb(10, 134, 184);
 $color_6: rgb(236, 64, 116);
-$color_7: rgb(74, 206, 250);
-$color_8: #131313;
-$color_9: #414141;
-$color_10: #ffffff;
-$color_11: #FFC069;
-$color_12: rgb(170, 116, 231);
-$color_13: rgb(109, 109, 109);
-$color_14: #7a7a7a;
-$color_15: rgb(255, 255, 255);
-$color_16: #e42f9e;
-$color_17: #968c8c;
-$color_18: #85c51f;
-$color_19: #fff;
-$color_20: rgba(37, 8, 75, 0.61);
+$color_7: #aa74e7;
+$color_8: rgb(74, 206, 250);
+$color_9: rgb(109, 109, 109);
+$color_10: #131313;
+$color_11: #414141;
+$color_12: #ffffff;
+$color_13: #FFC069;
+$color_14: rgb(170, 116, 231);
+$color_15: #7a7a7a;
+$color_16: rgb(255, 255, 255);
+$color_17: #e42f9e;
+$color_18: #968c8c;
+$color_19: #85c51f;
+$color_20: #fff;
+$color_21: rgba(37, 8, 75, 0.61);
 $font-family_1: 'Francois One', sans-serif;
 $font-family_2: 'Sniglet', cursive;
 $font-family_3: 'Franklin Gothic Medium', sans-serif;
@@ -147,6 +148,9 @@ h1 {
 li {
 	list-style: none;
 }
+.botones-index {
+	margin: 50px;
+}
 .boton1 {
 	background-color: $background-color_5;
 	font-weight: bolder;
@@ -257,10 +261,13 @@ li {
 	max-width: 600px;
 	border: solid 10px rgb(79, 214, 255);
 }
+.titulo-nosotros {
+	color: $color_7;
+	margin-top: 30px;
+}
 .carrusel-nosotros {
-	width: 80%;
+	width: 70%;
 	padding: 0;
-	margin: 2rem;
 }
 ul.carrusel {
 	position: relative;
@@ -306,12 +313,16 @@ ul.carrusel {
 	}
 }
 .titulo-blog {
-	color: $color_7;
+	color: $color_8;
 	padding: 1rem 0 .5rem 0;
 }
 .lorem-nosotros {
-	margin: 2rem;
-	padding: 0;
+	padding: 10px;
+	color: $color_9;
+	font-size: 20px;
+}
+.formulario-nosotros {
+	margin-bottom: 30px;
 }
 .catalogo-productos {
 	display: flex;
@@ -334,13 +345,13 @@ ul.carrusel {
 		.titulo-producto {
 			font-size: 18px;
 			font-weight: 700;
-			color: $color_8;
+			color: $color_10;
 		}
 		.descripcion {
 			font-size: 15px;
 			font-weight: 400;
 			margin-bottom: 30px;
-			color: $color_9;
+			color: $color_11;
 		}
 		.precio {
 			background: #FFC069;
@@ -353,7 +364,7 @@ ul.carrusel {
 }
 .boton-carrito {
 	background: #FFC069;
-	color: $color_10;
+	color: $color_12;
 	padding: 10px 0px;
 	margin-top: 30px;
 	text-decoration: none;
@@ -364,43 +375,43 @@ ul.carrusel {
 	font-size: 16px;
 }
 .titulo-productos {
-	color: $color_11;
+	color: $color_13;
 	padding: 20px 0px;
 }
 .titulo-sucursales {
-	color: $color_12;
+	color: $color_14;
 	padding-top: 30px;
 	margin: 5px;
 }
 .subtitulo-sucursales-contenido {
-	color: $color_13;
+	color: $color_9;
 	font-size: 15px;
 	padding: 0px;
 }
 .subtitulo-index-1 {
-	color: $color_12;
+	color: $color_14;
 }
 .subtitulo-index-2 {
 	color: $color_4;
 }
 .segundo-titulo-sucursales {
-	color: $color_12;
+	color: $color_14;
 	margin: 50px 10px 10px 10px;
 }
 .tercer-titulo-sucursales {
-	color: $color_14;
+	color: $color_15;
 	margin: 0px 0px 50px 0px;
 }
 .titulo-form {
-	color: $color_12;
+	color: $color_14;
 	margin: 2px;
 }
 .boton-enviar {
-	color: $color_15;
+	color: $color_16;
 	background-color: $background-color_11;
 	border: rgb(158, 143, 238);
 	&:hover {
-		color: $color_15;
+		color: $color_16;
 		background-color: $background-color_12;
 	}
 }
@@ -416,7 +427,7 @@ ul.carrusel {
 	padding-top: 30px;
 }
 .subtitulo-servicio {
-	color: $color_16;
+	color: $color_17;
 	font-size: 30px;
 }
 .lore-servicio {
@@ -455,7 +466,7 @@ ul.carrusel {
 	padding: 20px;
 	margin-top: 20px;
 	text-align: center;
-	color: $color_17;
+	color: $color_18;
 }
 .card {
 	width: 100%;
@@ -475,11 +486,11 @@ ul.carrusel {
 		text-align: center;
 		h3 {
 			margin-bottom: 15px;
-			color: $color_14;
+			color: $color_15;
 		}
 		p {
 			line-height: 1.8;
-			color: $color_18;
+			color: $color_19;
 			font-size: 14px;
 			margin-bottom: 5px;
 		}
@@ -488,14 +499,14 @@ ul.carrusel {
 			padding: 10px;
 			margin-top: 10px;
 			text-decoration: none;
-			color: $color_16;
+			color: $color_17;
 			border: 1px solid #2fb4cc;
 			border-radius: 4px;
 			transition: all 400ms ease;
 			margin-bottom: 5px;
 			&:hover {
 				background: #f83073;
-				color: $color_19;
+				color: $color_20;
 			}
 		}
 	}
@@ -537,7 +548,7 @@ ul.carrusel {
 }
 .accordion-button {
 	background-color: $background-color_15;
-	color: $color_20;
+	color: $color_21;
 	font-family: $font-family_3;
 }
 .collapsed {
@@ -560,10 +571,10 @@ ul.carrusel {
 		background-color: $background-color_18;
 	}
 }
-::-webkit-scrollbar {
+&::-webkit-scrollbar {
 	width: 12px;
 }
-::-webkit-scrollbar-thumb {
+&::-webkit-scrollbar-thumb {
 	background-image: linear-gradient(to right top, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1);
 	border-radius: 6px;
 	&:hover {

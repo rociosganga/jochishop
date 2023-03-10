@@ -26,7 +26,6 @@ body {
 
 .carrusel-index {
   width: 600;
-  height: 800px;
   margin-top: 10px;
   margin-bottom: 50px; }
 
@@ -56,8 +55,7 @@ body {
 .logo {
   font-size: 30px;
   font-weight: bold;
-  line-height: 100px;
-  padding: 0px 2.5rem 0px 0px; }
+  line-height: 100px; }
 
 .logo-jochi {
   width: 60%;
@@ -129,9 +127,13 @@ li {
   width: 100px;
   height: 100px; }
 
+.header-top {
+  display: flex;
+  justify-content: flex-start; }
+
 .barra-busqueda {
   font-family: "Sniglet", cursive;
-  display: flex;
+  display: none;
   position: relative;
   margin: 20px 0px;
   max-width: 800px;
@@ -146,6 +148,30 @@ li {
     width: 20px;
     border: 0.2em solid #d382a1; }
   .barra-busqueda > button {
+    font-family: "Sniglet", cursive;
+    font-family: "Sniglet", cursive;
+    padding: 0.6em 0.8em;
+    background-color: #d382a1;
+    color: white;
+    border: none; }
+
+.barra-busqueda-mobile {
+  font-family: "Sniglet", cursive;
+  display: flex;
+  position: relative;
+  margin: 20px 0px;
+  max-width: 800px;
+  width: 90%;
+  height: 50px;
+  box-shadow: 1px 1px 0 #965870, 2px 2px 0 #965870, 3px 3px 0 #965870, 4px 4px 0 #965870, 5px 5px 0 #965870, 6px 6px 0 #965870, 7px 7px 0 #965870; }
+  .barra-busqueda-mobile > input[type=text] {
+    font-family: "Sniglet", cursive;
+    font-family: "Sniglet", cursive;
+    flex: 1;
+    padding: 10px;
+    width: 20px;
+    border: 0.2em solid #d382a1; }
+  .barra-busqueda-mobile > button {
     font-family: "Sniglet", cursive;
     font-family: "Sniglet", cursive;
     padding: 0.6em 0.8em;
@@ -190,7 +216,6 @@ li {
 
 .carrito {
   margin: auto;
-  margin-left: 40px;
   cursor: pointer; }
   .carrito:hover {
     transform: rotateY(-360deg);
@@ -397,7 +422,6 @@ ul.carrusel {
   color: #968c8c; }
 
 .card {
-  width: 100%;
   margin: 2rem;
   border-radius: 2rem;
   overflow: hidden;
@@ -509,8 +533,11 @@ ul.carrusel {
 
 @media screen and (min-width: 915px) {
   .barra-busqueda {
+    display: flex;
     width: 100%;
     margin: auto; }
+  .barra-busqueda-mobile {
+    display: none; }
   .top {
     padding: 0 5rem;
     margin: auto; } }
