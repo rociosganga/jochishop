@@ -8,7 +8,7 @@
         <meta name="theme-color" content="#5f2e3a">
         <meta name="robots" content="index, follow">
         <meta name="Keywords" content="petshop, mascotas, tienda de mascotas, alimento para perro, alimento para gato, ropa para perro, correas, servicios para mascotas, veterinaria, urgencias para animales, castraciones, vacunaciones para animales, comunidad para familia, tienda, capital federal, palermo, nuñez, jochishop, shop, hospital para perros, hospital para gatos, hospital para aves, hospital para roedores">
-        <meta name="Description" content="Tienda dedicada a lo esencial para tu mascota: venta de alimento, accesorios, juguetes. Se ofrecen servicios como peluquería, castración, veterinaria y urgencias.">
+        <meta name="Description" content="Espacio para que la comunidad pueda compartir sus experiencias con sus mascotas, noticias, tips y mucho más.">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
         <title>Inicio - JochiShop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +20,12 @@
 <body>
     <header class="encabezado">   
         <div class="container d-flex justify-content-center top">
-            <a href="../index.html" class="logo nav-menu-link"><img class="logo-jochi" src="../imagenes/LOGO-JOCHI.png" alt=""></a>
+            <a href="../index.html" class="logo nav-menu-link"><img class="logo-jochi" src="../imagenes/LOGO-JOCHI.png" alt="Logo JochiShop"></a>
             <div class="barra-busqueda">
                 <input type="text" placeholder="¿Qué estás buscando?"/>
                 <button type="button">
-                    <a href=""><img src="../imagenes/lupa.png" alt=""></a>
+                    <a href=""><img src="../imagenes/lupa.png" alt="Lupa del Buscador">
+                    </a>
                 </button>
             </div>                
             <div class="carrito">
@@ -37,111 +38,103 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavDropdown">
+                    <ul class="collapse navbar-collapse justify-content-center m-0 p-0" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/paginas/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="productos.html">Alimento</a></li>
-                                <li><a class="dropdown-item" href="productos.html">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="productos.html">Juguetes</a></li>
-                            </ul>
-                            </li>                          
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/paginas/servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Servicios </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="servicios.html">Peluquería</a></li>
-                                <li><a class="dropdown-item" href="servicios.html">Vacunación</a></li>
-                                <li><a class="dropdown-item" href="servicios.html">Urgencias</a></li>
-                            </ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                            </li>                        
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="blog.html">Blog</a>
+                                <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="about.html">Sobre Nosotros</a>
                             </li>
-                        </ul>
-                    </div>
+                        </ul> 
+                    </ul> 
                 </div>
             </nav>
         </div>       
     </header>
 
     <main>
-        <h1 class="titulo-blog">NUESTRO BLOG</h1>
-        <h3>Bienvenidos a la comunidad de Jochi. Toda información que quieran aportar puede ser enviada a nuestro correo electrónico aportado en la sección de "Sobre Nosotros". ¡Animate!</h3>
-        <div class="container d-flex justify-content-center">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235114.jpg" alt="">
-                        <h3 class="texto-cardsblog">5 tips para cuidar el pelo de tu mascota</h3>
-                        <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que tu mascota brille y se vea mas sano que nunca.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
-                </div> 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235653.jpg" alt="">
-                        <h3 class="texto-cardsblog">Un perrito adorable.</h3>
-                        <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que tu mascota brille y se vea mas sano que nunca.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
-                </div> 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235118.jpg" alt="">
-                        <h3 class="texto-cardsblog">Descubren un nuevo tipo de color en los gatos.</h3>
-                        <p class="texto-cardsblog">Recientes investigaciones han demostrado que se están criando nuevos gatos, color rosa. Profundizarán mas en el tema para ver si son apto domésticos.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
-                </div> 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235661.jpg" alt="">
-                        <h3 class="texto-cardsblog">Curiosidades de los gatos.</h3>
-                        <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que tu mascota brille y se vea mas sano que nunca.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
-                </div> 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-gustavo-fring-6816861.jpg" alt="">
-                        <h3 class="texto-cardsblog">Nuevas tecnologías para diagnosticos más rapidos.</h3>
-                        <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que tu mascota brille y se vea mas sano que nunca.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
-                </div> 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235124.jpg" alt="">
-                        <h3 class="texto-cardsblog">¿Por qué tu mascota se comporta así?</h3>
-                        <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que tu mascota brille y se vea mas sano que nunca.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
-                </div> 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235661.jpg" alt="">
-                        <h3 class="texto-cardsblog">Lugares ideales para pasear a tu perro.</h3>
-                        <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que tu mascota brille y se vea mas sano que nunca.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
-                </div> 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card-blog">
-                        <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235114.jpg" alt="">
-                        <h3 class="texto-cardsblog">Cómo domesticar un dinosaurio.</h3>
-                        <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que tu mascota brille y se vea mas sano que nunca.</p>
-                        <button class="botonblog btn-secondary btn">Leer más</button>
-                    </div>
+        <div class= "container background--container blog">
+            <h1 class="titulo-blog">NUESTRO BLOG</h1>
+            <h3>Bienvenidos a la comunidad de Jochi. Toda información que quieran aportar puede ser enviada a nuestro correo electrónico aportado en la sección de "Sobre Nosotros". ¡Animate!</h3>
+            <div class="d-flex justify-content-center">
+                <div class="row">
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235114.jpg" alt="Veterinario examinando a un perro">
+                            <h3 class="texto-cardsblog">5 tips para cuidar el pelo de tu mascota</h3>
+                            <p class="texto-cardsblog">Nuestro compañero el Dr Lopez dedicado hace más de 20 años a la peluquería canina nos deja 5 recomendaciones para que...</p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </div>
+                    </article> 
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <article class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-julissa-helmuth-3726315.jpg" alt="Foto de un husky cachorro">
+                            <h3 class="texto-cardsblog">Un perrito adorable.</h3>
+                            <p class="texto-cardsblog">Para que tengas un bonito día, te dejamos una foto de un perro adorablemente chiquito.</p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </article>
+                    </article> 
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-adhitya-rizky-4135843.jpg" alt="Foto de un gato">
+                            <h3 class="texto-cardsblog">Descubren un nuevo tipo de color en los gatos.</h3>
+                            <p class="texto-cardsblog">Recientes investigaciones han demostrado que se están criando nuevos gatos, color rosa. Profundizarán mas en el tema ...</p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </div>
+                    </article> 
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-robert-laszlo-8349275.jpg" alt="">
+                            <h3 class="texto-cardsblog">Curiosidades de los gatos.</h3>
+                            <p class="texto-cardsblog">Como todos sabemos, los gatos son criaturas extremadamente independientes y aventureros, por lo que recomiendo no...</p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </div>
+                    </article> 
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-gustavo-fring-6816861.jpg" alt="">
+                            <h3 class="texto-cardsblog">Nuevas tecnologías para diagnosticos más rapidos.</h3>
+                            <p class="texto-cardsblog">El doctor Filipina de Estados Unidos ha hecho cientos de entrevistas ya que ha descubierto nuevas formas de evaluar a... </p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </div>
+                    </article> 
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235124.jpg" alt="">
+                            <h3 class="texto-cardsblog">¿Por qué tu mascota se comporta así?</h3>
+                            <p class="texto-cardsblog">Según los usuarios de twitter, hemos recibido quejas de que sus mascotas ya no les mueven la cola al llegar a casa... </p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </div>
+                    </article> 
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235661.jpg" alt="">
+                            <h3 class="texto-cardsblog">Lugares ideales para pasear a tu perro.</h3>
+                            <p class="texto-cardsblog">¿Ya no tienes idea de donde llevar a que tu mascota juegue o interactúe con otros perros? En Buenos Aires tenemos...</p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </div>
+                    </article> 
+                    <article class="col-12 col-sm-6 col-lg-3">
+                        <div class="card-blog">
+                            <img class= "fotoblog" src="../imagenes/pexels-tima-miroshnichenko-6235114.jpg" alt="">
+                            <h3 class="texto-cardsblog">Cómo domesticar un dinosaurio.</h3>
+                            <p class="texto-cardsblog">Es una mascota rara, pero no te preocupes ya que cada vez más personas cuentan con uno en sus casas. A continuación...</p>
+                            <button class="botonblog btn-secondary btn">Leer más</button>
+                        </div>
+                    </article> 
                 </div> 
             </div> 
-        </div> 
+        </div>
     </main>
     <footer class="pie pt-4 fixed">
         <div class="container">

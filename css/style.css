@@ -7,9 +7,15 @@
 
 html,body{
     font-family: 'Francois One', sans-serif;
-    background-color: rgb(255, 242, 246);
     font-size: 12px;
     text-align: center;
+    background-color: rgb(245, 223, 229);
+    background-image: url(../imagenes/huella-perro.png);
+    background-attachment: fixed;
+}
+
+.background--container{
+    background-color: rgb(233, 196, 210);
 }
 
 .encabezado{
@@ -23,11 +29,12 @@ html,body{
 }
 
 .carrusel-index{
-    width: 600;
-    height: 800px;
+    width: 600px;
+    height: 200px;
     margin-top: 10px;
     margin-bottom: 50px
 }
+
 .nav{
     display:flex;
     justify-content:space-evenly;
@@ -111,55 +118,74 @@ h1{
 .botones{
     display:flex;
     justify-content: space-evenly;
-    padding: 0px 40px 20px 40px
+    padding: 0px 40px 20px 40px;
+    font-family: 'Francois One', sans-serif;
 }
 
 li{
     list-style:none
 }
 
-.botones-index{
-    margin: 50px
-}
 
 .boton1{
-    background-color: paleturquoise;
+    background-color: rgb(175, 238, 238);
+    box-shadow: 3px 2px 2px 2px rgb(71, 153, 153);
     font-weight:bolder;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Francois One', sans-serif;
     border-radius: 50%;
     border-style:none;
     width: 100px;
     height:100px;
+}
+
+.boton1:hover{
+    background-color:rgb(141, 207, 207);
+    box-shadow: none;
+    transform:translatex(1px)
 }
 
 .boton2{
-    background-color: palevioletred;
+    background-color: rgb(216, 112, 147);
+    box-shadow: 3px 2px 2px 2px rgb(206, 63, 111);
     border-radius: 50%;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Francois One', sans-serif;
     font-weight:bolder;
     border-style:none;
     width: 100px;
     height:100px;
 }
 
+.boton2:hover{
+    background-color: rgb(194, 87, 122);
+    box-shadow: none;
+    transform:translatex(1px)
+    
+}
 .boton3{
-    background-color: palegoldenrod;
+    background-color: rgb(238, 232, 170);
+    box-shadow: 3px 2px 2px 2px rgb(221, 211, 95);
     border-radius: 50%;
     font-weight:bolder;
-    font-family: 'Sniglet', cursive;
+    font-family: 'Francois One', sans-serif;
     border-style:none;
     width: 100px;
     height:100px
 }
 
+.boton3:hover{
+    background-color: rgb(238, 227, 106);
+    box-shadow: none;
+    transform:translatex(1px)
+}
+
 
 .barra-busqueda {
-    font-family: 'Sniglet', cursive;
+    font-family: 'Francois One', sans-serif;
     display: flex;
     position: relative;
     margin: 20px 0px;
     max-width: 800px;
-    width: 50%;
+    width: 100%;
     height: 50px;
     box-shadow:
     1px 1px 0 rgb(150, 88, 112),
@@ -173,11 +199,11 @@ li{
 
 .barra-busqueda>input[type=text],
 .barra-busqueda>button {
-    font-family: 'Sniglet', cursive;
+    font-family: 'Francois One', sans-serif;
 }
 
 .barra-busqueda>input[type=text] {
-    font-family: 'Sniglet', cursive;
+    font-family: 'Francois One', sans-serif;
     flex:1;
     padding: 10px;
     width: 20px;
@@ -185,7 +211,7 @@ li{
 }
 
 .barra-busqueda>button {
-    font-family: 'Sniglet', cursive;
+    font-family: 'Francois One', sans-serif;
     padding:0.6em 0.8em;
     background-color:rgb(211, 130, 161);
     color:white;
@@ -262,7 +288,7 @@ li{
 /*Carrusel de Imagenes - Nosotros*/
 
 .titulo-nosotros{
-    color:#aa74e7
+    color:#aa74e7;
 }
 .carrusel-nosotros {
     width: 70%; 
@@ -405,7 +431,7 @@ ul.carrusel li:target {
 .subtitulo-sucursales-contenido{
     color: rgb(109, 109, 109);
     font-size: 15px;
-    padding: 0px;
+    margin:  10px auto;
 
 }
 
@@ -424,7 +450,6 @@ ul.carrusel li:target {
 
 .tercer-titulo-sucursales{
     color:#7a7a7a;
-    margin: 0px 0px 50px 0px
 }
 
 .titulo-form{
@@ -444,7 +469,7 @@ ul.carrusel li:target {
 }
 
 .lorem-servicios{
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .lista-servicios{
@@ -463,11 +488,13 @@ ul.carrusel li:target {
 }
 
 .lore-servicio{
-    font-size: 20px;
-    margin: 0 40px;
+    font-size: 12px;
+    word-wrap: break-word;
 }
 .foto-servicio{
-    max-width: 300px;
+    max-width: 200px;
+    margin: 25px 0;
+    border-radius: 8%;
 }
 
 .servicio{
@@ -476,14 +503,14 @@ ul.carrusel li:target {
     align-items: center;
     justify-content: center;
     flex-shrink: inherit;
-    gap: 15px;
+    max-width: 1400px;
+    gap: 10px;
     padding: 0px 20px 30px 20px;
-    margin: 30px 0;
+    margin: 20px 0;
     border-radius: 58px;
     background: #ffd6e0;
     box-shadow:  -11px 11px 22px #ccabb3,
-                11px -11px 22px #ffffff;
-
+                11px -11px 22px #ffffff; 
 }
 
 .top{
@@ -491,7 +518,7 @@ ul.carrusel li:target {
 }
 
 .container-card{
-	width: 30%;
+	width: 100px;
 	display: flex;
 	max-width: 1100px;
 	margin: auto;
@@ -505,49 +532,41 @@ ul.carrusel li:target {
 	text-align: center;
 	color: #968c8c;
 }
-.card{
-	width: 100%;
-	margin: 2rem;
-	border-radius: 2rem;
-	overflow: hidden;
-	background:#fff;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	transition: all 400ms ease-out;
-	cursor: default;
-}
-.card:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
-}
-.card .contenido-card{
-	padding: 15px;
-	text-align: center;
-}
-.card .contenido-card h3{
-	margin-bottom: 15px;
-	color: #7a7a7a;
-}
-.card .contenido-card p{
-	line-height: 1.8;
-	color: #85c51f;
-	font-size: 14px;
-	margin-bottom: 5px;
-}
-.card .contenido-card a{
-	display: inline-block;
-	padding: 10px;
-	margin-top: 10px;
-	text-decoration: none;
-	color: #e42f9e;
-	border: 1px solid #2fb4cc;
-	border-radius: 4px;
-	transition: all 400ms ease;
-	margin-bottom: 5px;
-}
-.card .contenido-card a:hover{
-	background: #f83073;
-	color: #fff;
-}
+.card {
+    margin: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default; }
+    .card:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%); }
+    .card .contenido-card {
+      padding: 15px;
+      text-align: center; }
+      .card .contenido-card h3 {
+        margin-bottom: 15px;
+        color: #7a7a7a; }
+      .card .contenido-card p {
+        line-height: 1.8;
+        color: #85c51f;
+        font-size: 14px;
+        margin-bottom: 5px; }
+      .card .contenido-card a {
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #e42f9e;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        margin-bottom: 5px; }
+        .card .contenido-card a:hover {
+          background: #f83073;
+          color: #fff; }
 
 
 .fotoblog{
@@ -560,7 +579,7 @@ ul.carrusel li:target {
 .card-blog {
     cursor: pointer;
     width: 300px;
-    margin: 30px;
+    margin: 30px auto;
     height: 450px;
     background: rgb(255, 255, 255);
     border-radius: 5px;
@@ -646,9 +665,12 @@ ul.carrusel li:target {
     body{
         font-size: 16px;
     }
+    .lorem-servicios{
+        font-size: 20px;
+    }
 }
 
-@media screen and (min-width: 915px){
+@media screen and (min-width: 800px){
     .barra-busqueda{
         width: 100%;
         margin: auto;
@@ -656,6 +678,12 @@ ul.carrusel li:target {
     .top{
         padding: 0 5rem;
         margin: auto;
+    }
+    .lore-servicio{
+        font-size: 16px;
+    }
+    .foto-servicio{
+        max-width: 350px;
     }
 }
 
@@ -669,7 +697,7 @@ ul.carrusel li:target {
     }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1100px){
+@media screen and (min-width: 900px) and (max-width: 1200px){
     .card-blog{
         width:200px;
         height: 300px
