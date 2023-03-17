@@ -1,4 +1,6 @@
-
+/*Carrusel de Imagenes - Nosotros*/
+/*Tarjetas de PRODUCTO*/
+/* Formato de la scrollbar */
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +21,6 @@ body {
   background-color: #f5dfe5;
   background-image: url(../imagenes/huella-perro.png);
   background-attachment: fixed; }
-
-.background--container {
-  background-color: #e9c4d2; }
 
 .encabezado {
   background-color: #f17b9f;
@@ -107,12 +106,12 @@ h1 {
   padding: 0px 40px 20px 40px;
   font-family: "Francois One", sans-serif; }
 
-li {
+.li {
   list-style: none; }
 
 .boton1 {
   background-color: paleturquoise;
-  box-shadow: 3px 2px 2px 2px #479999;
+  box-shadow: 3px 2px 2px 2px #54c7c7;
   font-weight: bolder;
   font-family: "Francois One", sans-serif;
   border-radius: 50%;
@@ -127,9 +126,9 @@ li {
 .boton2 {
   background-color: #d87093;
   box-shadow: 3px 2px 2px 2px #ce3f6f;
-  border-radius: 50%;
-  font-family: "Francois One", sans-serif;
   font-weight: bolder;
+  font-family: "Francois One", sans-serif;
+  border-radius: 50%;
   border-style: none;
   width: 100px;
   height: 100px; }
@@ -140,10 +139,10 @@ li {
 
 .boton3 {
   background-color: palegoldenrod;
-  box-shadow: 3px 2px 2px 2px #ddd35f;
-  border-radius: 50%;
+  box-shadow: 3px 2px 2px 2px #ebdf65;
   font-weight: bolder;
   font-family: "Francois One", sans-serif;
+  border-radius: 50%;
   border-style: none;
   width: 100px;
   height: 100px; }
@@ -388,7 +387,7 @@ ul.carrusel {
   font-size: 30px; }
 
 .lore-servicio {
-  font-size: 12px;
+  font-size: 16px;
   word-wrap: break-word; }
 
 .foto-servicio {
@@ -412,6 +411,21 @@ ul.carrusel {
 
 .top {
   padding-left: 5rem; }
+
+.background--container--index {
+  background-color: #cfe7c5; }
+
+.background--container--servicios {
+  background-color: #f8e7eb; }
+
+.background--container--productos {
+  background-color: #f3e0ad; }
+
+.background--container--blog {
+  background-color: #caecf8; }
+
+.background--container--about {
+  background-color: #eedfff; }
 
 .container-card {
   width: 100px;
@@ -463,6 +477,9 @@ ul.carrusel {
       .card .contenido-card a:hover {
         background: #f83073;
         color: #fff; }
+
+.cartas-blog {
+  padding-bottom: 30px; }
 
 .fotoblog {
   width: 85%;

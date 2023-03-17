@@ -14,9 +14,6 @@ html,body{
     background-attachment: fixed;
 }
 
-.background--container{
-    background-color: rgb(233, 196, 210);
-}
 
 .encabezado{
     background-color: rgb(241, 123, 159);
@@ -122,7 +119,7 @@ h1{
     font-family: 'Francois One', sans-serif;
 }
 
-li{
+.li{
     list-style:none
 }
 
@@ -488,7 +485,7 @@ ul.carrusel li:target {
 }
 
 .lore-servicio{
-    font-size: 12px;
+    font-size: 16px;
     word-wrap: break-word;
 }
 .foto-servicio{
@@ -515,6 +512,27 @@ ul.carrusel li:target {
 
 .top{
     padding-left: 5rem;
+}
+
+
+.background--container--index{
+    background-color: rgb(207, 231, 197);
+}
+
+.background--container--servicios{
+    background-color: #f8e7eb;
+}
+
+.background--container--productos{
+    background-color: #f3e0ad;
+}
+
+.background--container--blog{
+    background-color: rgb(202, 236, 248);
+}
+
+.background--container--about{
+    background-color: #eedfff;
 }
 
 .container-card{
@@ -568,6 +586,10 @@ ul.carrusel li:target {
           background: #f83073;
           color: #fff; }
 
+
+.cartas-blog{
+    padding-bottom: 30px
+}
 
 .fotoblog{
     width: 85%;
