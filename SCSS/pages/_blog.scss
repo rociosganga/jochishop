@@ -1,0 +1,63 @@
+@use '/custom' as *;
+
+.titulo-nosotros {
+	color: $color_7;
+	margin-top: 30px;
+}
+
+.titulo-blog {
+	color: $color_8;
+	padding: 1rem 0 .5rem 0;
+}
+.lorem-nosotros {
+	padding: 10px;
+	color: $color_9;
+	font-size: 20px;
+}
+.formulario-nosotros {
+	margin-bottom: 30px;
+}
+
+.cartas-blog {
+	padding-bottom: 30px;
+}
+.fotoblog {
+	width: 85%;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.card-blog {
+	cursor: pointer;
+	width: 300px;
+	margin: 30px auto;
+	height: 450px;
+	background: rgb(255, 255, 255);
+	border-radius: 5px;
+	border: 1px solid rgb(172, 218, 233);
+	transition: all .3s;
+	box-shadow: 12px 12px 2px 1px lightskyblue;
+	&:hover {
+		box-shadow: -12px 12px 2px -1px rgb(103, 185, 212);
+	}
+}
+
+.titulo-cardsblog{
+    color:#4d9eb9
+  }
+  
+.texto-cardsblog {
+	margin: 5px;
+}
+.botonblog {
+	background-color: $background-color_21;
+	border: rgb(97, 196, 230);
+	&:hover {
+		background-color: $background-color_22;
+	}
+}
+.btn-secondary {
+	background-color: $background-color_21;
+	border: rgb(97, 196, 230);
+}

@@ -1,0 +1,40 @@
+@use '/custom' as *;
+
+
+.pie {
+	background-color: $background-color_2;
+	box-shadow: 3px 0 10px 10px rgba(189, 20, 223, 0.2);
+	font-size: 0.8rem;
+	width: 100%;
+	position: absolute;
+	list-style: none;
+}
+.pie2 {
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	padding: .5rem;
+}
+.redes {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.jochishop {
+	display: flex;
+	justify-content: center;
+	background-color: $background-color_12;
+	margin: auto;
+	text-decoration: solid;
+}
+
+.faq {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.horarios {
+	margin: auto;
+}

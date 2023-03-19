@@ -1,0 +1,77 @@
+$color_1: rgb(150, 88, 112);
+$color_2: white;
+$color_3: palevioletred;
+$color_4: #f7b72f;
+$color_5: rgb(10, 134, 184);
+$color_6: rgb(236, 64, 116);
+$color_7: #aa74e7;
+$color_8: rgb(74, 206, 250);
+$color_9: rgb(109, 109, 109);
+$color_10: #131313;
+$color_11: #414141;
+$color_12: #ffffff;
+$color_13: #FFC069;
+$color_14: rgb(170, 116, 231);
+$color_15: #7a7a7a;
+$color_16: rgb(255, 255, 255);
+$color_17: #e42f9e;
+$color_18: #968c8c;
+$color_19: #85c51f;
+$color_20: #fff;
+$color_21: rgba(37, 8, 75, 0.61);
+$font-family_1: 'Francois One', sans-serif;
+$font-family_2: 'Franklin Gothic Medium', sans-serif;
+$background-color_1: rgb(245, 223, 229);
+$background-color_2: rgb(241, 123, 159);
+$background-color_3: rgb(236, 64, 116);
+$background-color_4: rgb(240, 203, 215);
+$background-color_5: rgb(175, 238, 238);
+$background-color_6: rgb(141, 207, 207);
+$background-color_7: rgb(216, 112, 147);
+$background-color_8: rgb(194, 87, 122);
+$background-color_9: rgb(238, 232, 170);
+$background-color_10: rgb(238, 227, 106);
+$background-color_11: rgb(211, 130, 161);
+$background-color_12: rgb(192, 79, 122);
+$background-color_13: grey;
+$background-color_14: rgb(158, 143, 238);
+$background-color_15: rgb(130, 37, 158);
+$background-color_16: rgb(207, 231, 197);
+$background-color_17: #f8e7eb;
+$background-color_18: #f3e0ad;
+$background-color_19: rgb(202, 236, 248);
+$background-color_20: #eedfff;
+$background-color_21: rgb(97, 196, 230);
+$background-color_22: rgb(77, 158, 185);
+$background-color_23: rgba(218, 201, 240, 0.61);
+$background-color_24: rgba(208, 182, 238, 0.61);
+$background-color_25: #f3d962;
+$background-color_26: #c27d22;
+
+.background--container--index {
+	background-color: $background-color_16;
+}
+.background--container--servicios {
+	background-color: $background-color_17;
+}
+.background--container--productos {
+	background-color: $background-color_18;
+}
+.background--container--blog {
+	background-color: $background-color_19;
+}
+.background--container--about {
+	background-color: $background-color_20;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to right top, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1);
+	border-radius: 6px;
+	&:hover {
+		background: rgb(192, 79, 122);
+	}
+}
+

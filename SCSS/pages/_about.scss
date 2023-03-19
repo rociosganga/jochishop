@@ -1,0 +1,53 @@
+@use './custom' as *;
+
+.titulo-sucursales {
+	color: $color_14;
+	padding-top: 30px;
+	margin: 5px;
+}
+.subtitulo-sucursales-contenido {
+	color: $color_9;
+	font-size: 15px;
+	margin: 10px auto;
+}
+.subtitulo-index-1 {
+	color: $color_14;
+}
+.subtitulo-index-2 {
+	color: $color_4;
+}
+.segundo-titulo-sucursales {
+	color: $color_14;
+	margin: 50px 10px 10px 10px;
+}
+.tercer-titulo-sucursales {
+	color: $color_15;
+}
+.titulo-form {
+	color: $color_14;
+	margin: 2px;
+}
+.boton-enviar {
+	color: $color_16;
+	background-color: $background-color_14;
+	border: rgb(158, 143, 238);
+	&:hover {
+		color: $color_16;
+		background-color: $background-color_15;
+	}
+}
+
+.accordion-button {
+	background-color: $background-color_23;
+	color: $color_21;
+	font-family: $font-family_2;
+}
+.collapsed {
+	background-color: $background-color_24;
+}
+.mapa {
+	width: 100%;
+}
+.form {
+	width: 80%;
+}

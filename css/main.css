@@ -1,591 +1,603 @@
-/*Carrusel de Imagenes - Nosotros*/
-/*Tarjetas de PRODUCTO*/
-/* Formato de la scrollbar */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  font-family: "Francois One", sans-serif;
-  font-size: 12px;
-  text-align: center;
-  background-color: #f5dfe5;
-  background-image: url(../imagenes/huella-perro.png);
-  background-attachment: fixed; }
-
-body {
-  font-family: "Francois One", sans-serif;
-  font-size: 12px;
-  text-align: center;
-  background-color: #f5dfe5;
-  background-image: url(../imagenes/huella-perro.png);
-  background-attachment: fixed; }
-
-.encabezado {
-  background-color: #f17b9f;
-  position: sticky;
-  width: 100%; }
-
-.cabesa {
-  background-color: #ec4074; }
-
-.carrusel-index {
-  width: 600px;
-  height: 200px;
-  margin-top: 10px;
-  margin-bottom: 50px; }
-
-.nav {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 800px;
-  margin: 0px 10px; }
-
-.nav-menu {
-  display: flex;
-  justify-content: center; }
-
-.nav-menu-item {
-  font-size: 18px;
-  margin: 0 20px;
-  width: max-content;
-  padding-bottom: 100px; }
-
-.nav-menu-link {
-  color: white;
-  text-decoration: none;
-  list-style: none; }
-  .nav-menu-link:hover {
-    color: #965870; }
-
-.logo {
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 100px;
-  padding: 0px 2.5rem 0px 0px; }
-
-.logo-jochi {
-  width: 60%;
-  padding: 0px 2px; }
-
-.imagen {
-  padding-top: 40px;
-  border-radius: 50%; }
-
-h1 {
-  color: palevioletred;
-  font-style: italic; }
-
-.texto-centrado {
-  text-align: center; }
-
-.tarjeta-inicio {
-  border: 1px solid gray;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 20rem;
-  margin: auto;
-  background-color: #f0cbd7; }
-
-.tarjetas {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  padding: 20px 40px; }
-
-.subtitulo-card-inicio1 {
-  color: #f7b72f; }
-
-.subtitulo-card-inicio2 {
-  color: #0a86b8; }
-
-.botones {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0px 40px 20px 40px;
-  font-family: "Francois One", sans-serif; }
-
-.li {
-  list-style: none; }
-
-.boton1 {
-  background-color: paleturquoise;
-  box-shadow: 3px 2px 2px 2px #54c7c7;
-  font-weight: bolder;
-  font-family: "Francois One", sans-serif;
-  border-radius: 50%;
-  border-style: none;
-  width: 100px;
-  height: 100px; }
-  .boton1:hover {
-    background-color: #8dcfcf;
-    box-shadow: none;
-    transform: translatex(1px); }
-
-.boton2 {
-  background-color: #d87093;
-  box-shadow: 3px 2px 2px 2px #ce3f6f;
-  font-weight: bolder;
-  font-family: "Francois One", sans-serif;
-  border-radius: 50%;
-  border-style: none;
-  width: 100px;
-  height: 100px; }
-  .boton2:hover {
-    background-color: #c2577a;
-    box-shadow: none;
-    transform: translatex(1px); }
-
-.boton3 {
-  background-color: palegoldenrod;
-  box-shadow: 3px 2px 2px 2px #ebdf65;
-  font-weight: bolder;
-  font-family: "Francois One", sans-serif;
-  border-radius: 50%;
-  border-style: none;
-  width: 100px;
-  height: 100px; }
-  .boton3:hover {
-    background-color: #eee36a;
-    box-shadow: none;
-    transform: translatex(1px); }
-
-.barra-busqueda {
-  font-family: "Francois One", sans-serif;
-  display: flex;
-  position: relative;
-  margin: 20px 0px;
-  max-width: 800px;
-  width: 100%;
-  height: 50px;
-  box-shadow: 1px 1px 0 #965870, 2px 2px 0 #965870, 3px 3px 0 #965870, 4px 4px 0 #965870, 5px 5px 0 #965870, 6px 6px 0 #965870, 7px 7px 0 #965870; }
-  .barra-busqueda > input[type=text] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  html {
     font-family: "Francois One", sans-serif;
-    font-family: "Francois One", sans-serif;
-    flex: 1;
-    padding: 10px;
-    width: 20px;
-    border: 0.2em solid #d382a1; }
-  .barra-busqueda > button {
-    font-family: "Francois One", sans-serif;
-    font-family: "Francois One", sans-serif;
-    padding: 0.6em 0.8em;
-    background-color: #d382a1;
-    color: white;
-    border: none; }
-
-.pie {
-  background-color: #f17b9f;
-  box-shadow: 3px 0 10px 10px rgba(189, 20, 223, 0.2);
-  font-size: 0.8rem;
-  width: 100%;
-  position: absolute; }
-
-.pie2 {
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  padding: .5rem; }
-
-.redes {
-  display: flex;
-  flex-direction: column;
-  margin: auto; }
-
-.productos {
-  display: flex;
-  flex-direction: column;
-  margin: auto; }
-
-.faq {
-  display: flex;
-  flex-direction: column;
-  margin: auto; }
-
-.jochishop {
-  display: flex;
-  justify-content: center;
-  background-color: #c04f7a;
-  margin: auto;
-  text-decoration: solid; }
-
-.carrito {
-  margin: auto;
-  margin-left: 40px;
-  cursor: pointer; }
-  .carrito:hover {
-    transform: rotateY(-360deg);
-    transition-duration: 2s; }
-
-.carousel-control-next-icon {
-  color: #ec4074; }
-
-.carousel-control-prev-icon {
-  color: #ec4074; }
-
-.horarios {
-  margin: auto; }
-
-.foto-perro {
-  max-width: 600px;
-  border: solid 10px #4fd6ff; }
-
-.titulo-nosotros {
-  color: #aa74e7;
-  margin-top: 30px; }
-
-.carrusel-nosotros {
-  width: 70%;
-  padding: 0; }
-
-ul.carrusel {
-  position: relative;
-  width: 800px;
-  height: 300px; }
-  ul.carrusel li {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    width: inherit;
-    height: inherit; }
-    ul.carrusel li img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover; }
-    ul.carrusel li:first-child {
-      opacity: 1; }
-    ul.carrusel li:target {
-      opacity: 1; }
-
-.menu-carrusel {
-  text-align: center;
-  margin: 0; }
-  .menu-carrusel li {
-    display: inline-block;
-    text-align: center; }
-    .menu-carrusel li a {
-      display: inline-block;
-      color: white;
-      text-decoration: none;
-      background-color: grey;
-      padding: 10px;
-      width: 45px;
-      height: 45px;
-      font-size: 15px;
-      border-radius: 100%; }
-
-.titulo-blog {
-  color: #4acefa;
-  padding: 1rem 0 .5rem 0; }
-
-.lorem-nosotros {
-  padding: 10px;
-  color: #6d6d6d;
-  font-size: 20px; }
-
-.formulario-nosotros {
-  margin-bottom: 30px; }
-
-.catalogo-productos {
-  display: flex;
-  justify-content: space-evenly; }
-
-.tarjeta-producto {
-  width: 90%;
-  margin: 50px 30px;
-  background: #ffffff;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45); }
-  .tarjeta-producto .imagen-producto {
-    position: relative;
-    margin: 0px; }
-    .tarjeta-producto .imagen-producto img {
-      width: 100%; }
-  .tarjeta-producto .info-producto {
-    padding: 0px 25px; }
-    .tarjeta-producto .info-producto .titulo-producto {
-      font-size: 18px;
-      font-weight: 700;
-      color: #131313; }
-    .tarjeta-producto .info-producto .descripcion {
-      font-size: 15px;
-      font-weight: 400;
-      margin-bottom: 30px;
-      color: #414141; }
-    .tarjeta-producto .info-producto .precio {
-      background: #FFC069;
-      padding: 8px 10px;
-      border-radius: 30px;
-      font-weight: 400;
-      font-size: 13px; }
-
-.boton-carrito {
-  background: #FFC069;
-  color: #ffffff;
-  padding: 10px 0px;
-  margin-top: 30px;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px; }
-
-.titulo-productos {
-  color: #FFC069;
-  padding: 20px 0px; }
-
-.titulo-sucursales {
-  color: #aa74e7;
-  padding-top: 30px;
-  margin: 5px; }
-
-.subtitulo-sucursales-contenido {
-  color: #6d6d6d;
-  font-size: 15px;
-  margin: 10px auto; }
-
-.subtitulo-index-1 {
-  color: #aa74e7; }
-
-.subtitulo-index-2 {
-  color: #f7b72f; }
-
-.segundo-titulo-sucursales {
-  color: #aa74e7;
-  margin: 50px 10px 10px 10px; }
-
-.tercer-titulo-sucursales {
-  color: #7a7a7a; }
-
-.titulo-form {
-  color: #aa74e7;
-  margin: 2px; }
-
-.boton-enviar {
-  color: white;
-  background-color: #9e8fee;
-  border: #9e8fee; }
-  .boton-enviar:hover {
-    color: white;
-    background-color: #82259e; }
-
-.lorem-servicios {
-  font-size: 12px; }
-
-.lista-servicios {
-  display: flex;
-  padding: 40px;
-  flex-direction: column; }
-
-.titulo-servicios {
-  padding-top: 30px; }
-
-.subtitulo-servicio {
-  color: #e42f9e;
-  font-size: 30px; }
-
-.lore-servicio {
-  font-size: 16px;
-  word-wrap: break-word; }
-
-.foto-servicio {
-  max-width: 200px;
-  margin: 25px 0;
-  border-radius: 8%; }
-
-.servicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: inherit;
-  max-width: 1400px;
-  gap: 10px;
-  padding: 0px 20px 30px 20px;
-  margin: 20px 0;
-  border-radius: 58px;
-  background: #ffd6e0;
-  box-shadow: -11px 11px 22px #ccabb3, 11px -11px 22px #ffffff; }
-
-.top {
-  padding-left: 5rem; }
-
-.background--container--index {
-  background-color: #cfe7c5; }
-
-.background--container--servicios {
-  background-color: #f8e7eb; }
-
-.background--container--productos {
-  background-color: #f3e0ad; }
-
-.background--container--blog {
-  background-color: #caecf8; }
-
-.background--container--about {
-  background-color: #eedfff; }
-
-.container-card {
-  width: 100px;
-  display: flex;
-  max-width: 1100px;
-  margin: auto; }
-
-.title-cards {
-  width: 100%;
-  max-width: 1080px;
-  margin: auto;
-  padding: 20px;
-  margin-top: 20px;
-  text-align: center;
-  color: #968c8c; }
-
-.card {
-  margin: 2rem;
-  border-radius: 2rem;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease-out;
-  cursor: default; }
-  .card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%); }
-  .card .contenido-card {
-    padding: 15px;
-    text-align: center; }
-    .card .contenido-card h3 {
-      margin-bottom: 15px;
-      color: #7a7a7a; }
-    .card .contenido-card p {
-      line-height: 1.8;
-      color: #85c51f;
-      font-size: 14px;
-      margin-bottom: 5px; }
-    .card .contenido-card a {
-      display: inline-block;
-      padding: 10px;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #e42f9e;
-      border: 1px solid #2fb4cc;
-      border-radius: 4px;
-      transition: all 400ms ease;
-      margin-bottom: 5px; }
-      .card .contenido-card a:hover {
-        background: #f83073;
-        color: #fff; }
-
-.cartas-blog {
-  padding-bottom: 30px; }
-
-.fotoblog {
-  width: 85%;
-  margin-bottom: 30px;
-  margin-top: 10px;
-  border-radius: 1rem;
-  overflow: hidden; }
-
-.card-blog {
-  cursor: pointer;
-  width: 300px;
-  margin: 30px auto;
-  height: 450px;
-  background: white;
-  border-radius: 5px;
-  border: 1px solid #acdae9;
-  transition: all .3s;
-  box-shadow: 12px 12px 2px 1px lightskyblue; }
-  .card-blog:hover {
-    box-shadow: -12px 12px 2px -1px #67b9d4; }
-
-.texto-cardsblog {
-  margin: 5px; }
-
-.botonblog {
-  background-color: #61c4e6;
-  border: #61c4e6; }
-  .botonblog:hover {
-    background-color: #4d9eb9; }
-
-.btn-secondary {
-  background-color: #61c4e6;
-  border: #61c4e6; }
-
-.accordion-button {
-  background-color: rgba(218, 201, 240, 0.61);
-  color: rgba(37, 8, 75, 0.61);
-  font-family: "Franklin Gothic Medium", sans-serif; }
-
-.collapsed {
-  background-color: rgba(208, 182, 238, 0.61); }
-
-.mapa {
-  width: 100%; }
-
-.form {
-  width: 80%; }
-
-.nav-item {
-  text-align: left;
-  margin-left: 15px; }
-
-.botonproducto {
-  background-color: #f3d962;
-  border: #f7b72f; }
-  .botonproducto:hover {
-    background-color: #c27d22; }
-
-::-webkit-scrollbar {
-  width: 12px; }
-
-::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right top, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1);
-  border-radius: 6px; }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #c04f7a; }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .container-card {
-    flex-wrap: wrap; } }
-
-@media screen and (min-width: 541px) {
+    font-size: 12px;
+    text-align: center;
+    background-color: #f5dfe5;
+    background-image: url(../imagenes/huella-perro.png);
+    background-attachment: fixed; }
+  
   body {
-    font-size: 16px; }
-  .lorem-servicios {
-    font-size: 20px; } }
+    font-family: "Francois One", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    background-color: #f5dfe5;
+    background-image: url(../imagenes/huella-perro.png);
+    background-attachment: fixed; }
+  
+  .encabezado {
+    background-color: #f17b9f;
+    position: sticky;
+    width: 100%; }
+  
+  .cabesa {
+    background-color: #ec4074; }
+  
+  .carrusel-index {
+    width: 600px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px; }
+  
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: 0px 10px; }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: center; }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 20px;
+    width: max-content;
+    padding-bottom: 100px; }
+  
+  .nav-menu-link {
+    color: white;
+    text-decoration: none;
+    list-style: none; }
+    .nav-menu-link:hover {
+      color: #965870; }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 100px;
+    padding: 0px 2.5rem 0px 0px; }
+  
+  .logo-jochi {
+    width: 60%;
+    padding: 0px 2px; }
+  
+  .imagen {
+    padding-top: 40px;
+    border-radius: 50%; }
+  
+  h1 {
+    color: palevioletred;
+    font-style: italic; }
+  
+  .texto-centrado {
+    text-align: center; }
+  
+  .tarjeta-inicio {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 20rem;
+    margin: auto;
+    background-color: #f0cbd7; }
+  
+  .tarjetas {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 40px; }
+  
+  .subtitulo-card-inicio1 {
+    color: #f7b72f; }
+  
+  .subtitulo-card-inicio2 {
+    color: #0a86b8; }
+  
+  .botones {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 40px 20px 40px;
+    font-family: "Francois One", sans-serif; }
+  
+  li {
+    list-style: none; }
+  
+  .boton1 {
+    background-color: paleturquoise;
+    box-shadow: 3px 2px 2px 2px #64dbdb;
+    font-weight: bolder;
+    font-family: "Francois One", sans-serif;
+    border-radius: 50%;
+    border-style: none;
+    width: 100px;
+    height: 100px; }
+    .boton1:hover {
+      background-color: #8dcfcf;
+      box-shadow: none;
+      transform: translatex(1px); }
+  
+  .boton2 {
+    background-color: #d87093;
+    box-shadow: 3px 2px 2px 2px #ce3f6f;
+    border-radius: 50%;
+    font-family: "Francois One", sans-serif;
+    font-weight: bolder;
+    border-style: none;
+    width: 100px;
+    height: 100px; }
+    .boton2:hover {
+      background-color: #c2577a;
+      box-shadow: none;
+      transform: translatex(1px); }
+  
+  .boton3 {
+    background-color: palegoldenrod;
+    box-shadow: 3px 2px 2px 2px #e0d660;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-family: "Francois One", sans-serif;
+    border-style: none;
+    width: 100px;
+    height: 100px; }
+    .boton3:hover {
+      background-color: #eee36a;
+      box-shadow: none;
+      transform: translatex(1px); }
 
-@media screen and (min-width: 800px) {
   .barra-busqueda {
+    font-family: "Francois One", sans-serif;
+    display: flex;
+    position: relative;
+    margin: 20px 0px;
+    max-width: 800px;
     width: 100%;
+    height: 50px;
+    box-shadow: 1px 1px 0 #965870, 2px 2px 0 #965870, 3px 3px 0 #965870, 4px 4px 0 #965870, 5px 5px 0 #965870, 6px 6px 0 #965870, 7px 7px 0 #965870; }
+    .barra-busqueda > input[type=text] {
+      font-family: "Francois One", sans-serif;
+      font-family: "Francois One", sans-serif;
+      flex: 1;
+      padding: 10px;
+      width: 20px;
+      border: 0.2em solid #d382a1; }
+    .barra-busqueda > button {
+      font-family: "Francois One", sans-serif;
+      font-family: "Francois One", sans-serif;
+      padding: 0.6em 0.8em;
+      background-color: #d382a1;
+      color: white;
+      border: none; }
+  
+  .pie {
+    background-color: #f17b9f;
+    box-shadow: 3px 0 10px 10px rgba(189, 20, 223, 0.2);
+    font-size: 1rem;
+    width: 100%;
+    position: absolute; 
+    list-style: none;}
+  
+  .pie2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: .5rem; }
+  
+  .redes {
+    display: flex;
+    flex-direction: column;
     margin: auto; }
-  .top {
-    padding: 0 5rem;
+  
+  .productos {
+    display: flex;
+    flex-direction: column;
     margin: auto; }
-  .lore-servicio {
-    font-size: 16px; }
-  .foto-servicio {
-    max-width: 350px; } }
-
-@media screen and (max-width: 1400px) {
-  .card-blog {
-    width: 250px;
-    height: 350px; }
-  .texto-cardsblog {
-    font-size: 12px; } }
-
-@media screen and (min-width: 900px) and (max-width: 1200px) {
-  .card-blog {
-    width: 200px;
+  
+  .faq {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  
+  .jochishop {
+    display: flex;
+    justify-content: center;
+    background-color: #c04f7a;
+    margin: auto;
+    text-decoration: solid; }
+  
+  .carrito {
+    margin: auto;
+    margin-left: 40px;
+    cursor: pointer; }
+    .carrito:hover {
+      transform: rotateY(-360deg);
+      transition-duration: 2s; }
+  
+  .carousel-control-next-icon {
+    color: #ec4074; }
+  
+  .carousel-control-prev-icon {
+    color: #ec4074; }
+  
+  .horarios {
+    margin: auto; }
+  
+  .foto-perro {
+    max-width: 600px;
+    border: solid 10px #4fd6ff; }
+  
+  .titulo-nosotros {
+    color: #aa74e7;
+    margin-top: 30px; }
+  
+  .carrusel-nosotros {
+    width: 70%;
+    padding: 0; }
+  
+  ul.carrusel {
+    position: relative;
+    width: 800px;
     height: 300px; }
-  .texto-cardsblog {
-    font-size: 10px; }
-  .botonblog {
-    width: 60px;
-    font-size: 10px; } }
+    ul.carrusel li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: inherit;
+      height: inherit; }
+      ul.carrusel li img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover; }
+      ul.carrusel li:first-child {
+        opacity: 1; }
+      ul.carrusel li:target {
+        opacity: 1; }
+  
+  .menu-carrusel {
+    text-align: center;
+    margin: 0; }
+    .menu-carrusel li {
+      display: inline-block;
+      text-align: center; }
+      .menu-carrusel li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        padding: 10px;
+        width: 45px;
+        height: 45px;
+        font-size: 15px;
+        border-radius: 100%; }
+  
+  .titulo-blog {
+    color: #4acefa;
+    padding: 1rem 0 .5rem 0; }
+  
+  .lorem-nosotros {
+    padding: 10px;
+    color: #6d6d6d;
+    font-size: 20px; }
+  
+  .formulario-nosotros {
+    margin-bottom: 30px; }
+  
+  .catalogo-productos {
+    display: flex;
+    justify-content: space-evenly; }
+  
+  .tarjeta-producto {
+    width: 90%;
+    margin: 50px 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45); }
+    .tarjeta-producto .imagen-producto {
+      position: relative;
+      margin: 0px; }
+      .tarjeta-producto .imagen-producto img {
+        width: 100%; }
+    .tarjeta-producto .info-producto {
+      padding: 0px 25px; }
+      .tarjeta-producto .info-producto .titulo-producto {
+        font-size: 18px;
+        font-weight: 700;
+        color: #131313; }
+      .tarjeta-producto .info-producto .descripcion {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #414141; }
+      .tarjeta-producto .info-producto .precio {
+        background: #FFC069;
+        padding: 8px 10px;
+        border-radius: 30px;
+        font-weight: 400;
+        font-size: 13px; }
+  
+  .card-title{
+    color: rgb(224, 198, 46);
+    font-size: 20px
+  }
+  .boton-carrito {
+    background: #FFC069;
+    color: #ffffff;
+    padding: 10px 0px;
+    margin-top: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px; }
+  
+  .titulo-productos {
+    color: #FFC069;
+    padding: 20px 0px; }
+  
+  .titulo-sucursales {
+    color: #aa74e7;
+    padding-top: 30px;
+    margin: 5px; }
+  
+  .subtitulo-sucursales-contenido {
+    color: #6d6d6d;
+    font-size: 15px;
+    margin: 10px auto; }
+  
+  .subtitulo-index-1 {
+    color: #aa74e7; }
+  
+  .subtitulo-index-2 {
+    color: #f7b72f; }
+  
+  .segundo-titulo-sucursales {
+    color: #aa74e7;
+    margin: 50px 10px 10px 10px; }
+  
+  .tercer-titulo-sucursales {
+    color: #7a7a7a; }
+  
+  .titulo-form {
+    color: #aa74e7;
+    margin: 2px; }
+  
+  .boton-enviar {
+    color: white;
+    background-color: #9e8fee;
+    border: #9e8fee; }
+    .boton-enviar:hover {
+      color: white;
+      background-color: #82259e; }
+  
+  .lorem-servicios {
+    font-size: 20px; }
+  
+  .lista-servicios {
+    display: flex;
+    padding: 40px;
+    flex-direction: column; }
+  
+  .titulo-servicios {
+    padding-top: 30px; }
+  
+  .subtitulo-servicio {
+    color: #e42f9e;
+    font-size: 30px; }
+  
+  .lore-servicio {
+    font-size: 20px;
+    word-wrap: break-word; }
+  
+  .foto-servicio {
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 8%; }
+  
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: inherit;
+    max-width: 1400px;
+    gap: 10px;
+    padding: 0px 20px 30px 20px;
+    margin: 20px 0;
+    border-radius: 58px;
+    background: #ffd6e0;
+    box-shadow: -11px 11px 22px #ccabb3, 11px -11px 22px #ffffff; }
+  
+  .top {
+    padding-left: 5rem; }
+  
+  .background--container--index {
+    background-color: #cfe7c5; }
+  
+  .background--container--servicios {
+    background-color: #f8e7eb; }
+  
+  .background--container--productos {
+    background-color: #f3e0ad; }
+  
+  .background--container--blog {
+    background-color: #caecf8; }
+  
+  .background--container--about {
+    background-color: #eedfff; }
+  
+  .container-card {
+    width: 100px;
+    display: flex;
+    max-width: 1100px;
+    margin: auto; }
+  
+  .title-cards {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #968c8c; }
+  
+  .card {
+    margin: 15px;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default; }
+    .card:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%); }
+    .card .contenido-card {
+      padding: 10px;
+      text-align: center; }
+      .card .contenido-card h3 {
+        margin-bottom: 15px;
+        color: #7a7a7a; }
+      .card .contenido-card p {
+        line-height: 1.8;
+        color: #85c51f;
+        font-size: 14px;
+        margin-bottom: 5px; }
+      .card .contenido-card a {
+        display: inline-block;
+        padding: 5px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #e42f9e;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        margin-bottom: 5px; }
+        .card .contenido-card a:hover {
+          background: #f83073;
+          color: #fff; }
+  
+  .cartas-blog {
+    padding-bottom: 30px; }
+  
+  .fotoblog {
+    width: 85%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 1rem;
+    overflow: hidden; }
+  
+  .card-blog {
+    cursor: pointer;
+    width: 300px;
+    margin: 30px auto;
+    height: 450px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #acdae9;
+    transition: all .3s;
+    box-shadow: 12px 12px 2px 1px lightskyblue; }
+    .card-blog:hover {
+      box-shadow: -12px 12px 2px -1px #67b9d4; }
+  
+  .titulo-cardsblog{
+    color:#4d9eb9
+  }
 
-@media screen and (min-width: 1200px) {
+  .texto-cardsblog {
+    margin: 5px; }
+  
+  .botonblog {
+    background-color: #61c4e6;
+    border: #61c4e6; }
+    .botonblog:hover {
+      background-color: #4d9eb9; }
+  
+  .btn-secondary {
+    background-color: #61c4e6;
+    border: #61c4e6; }
+  
+  .accordion-button {
+    background-color: rgba(218, 201, 240, 0.61);
+    color: rgba(37, 8, 75, 0.61);
+    font-family: "Franklin Gothic Medium", sans-serif; }
+  
+  .collapsed {
+    background-color: rgba(208, 182, 238, 0.61); }
+  
+  .mapa {
+    width: 100%; }
+  
+  .form {
+    width: 80%; }
+  
   .nav-item {
-    margin: 0 6.5rem; } }
+    text-align: left;
+    margin-left: 15px; }
+  
+  .botonproducto {
+    background-color: #f3d962;
+    border: #f7b72f;
+    color:black }
+    .botonproducto:hover {
+      background-color: #c27d22; }
+  
+  ::-webkit-scrollbar {
+    width: 12px; }
+  
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right top, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1, #cc68a1);
+    border-radius: 6px; }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c04f7a; }
+  
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .container-card {
+      flex-wrap: wrap; } }
+  
+  @media screen and (min-width: 541px) {
+    body {
+      font-size: 16px; }
+    .lorem-servicios {
+      font-size: 20px; } }
+  
+  @media screen and (min-width: 800px) {
+    .barra-busqueda {
+      width: 100%;
+      margin: auto; }
+    .top {
+      padding: 0 5rem;
+      margin: auto; }
+    .lore-servicio {
+      font-size: 20px; }
+    .foto-servicio {
+      max-width: 300px; } }
+  
+  @media screen and (max-width: 1400px) {
+    .card-blog {
+      width: 250px;
+      height: 350px; }
+    .texto-cardsblog {
+      font-size: 12px; } }
+  
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .card-blog {
+      width: 200px;
+      height: 300px; }
+    .texto-cardsblog {
+      font-size: 10px; }
+    .botonblog {
+      width: 60px;
+      font-size: 10px; } }
+  
+  @media screen and (min-width: 1200px) {
+    .nav-item {
+      margin: 0 6.5rem; } }
+  
+  @media screen and (min-width: 570px) and (max-width: 800px) {
+    .foto-servicio {
+        max-width: 250px;
+        margin: 10px }  }

@@ -1,0 +1,41 @@
+@use '/custom' as *;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: $font-family_1;
+	font-size: 12px;
+	text-align: center;
+	background-color: $background-color_1;
+	background-image: url(../imagenes/huella-perro.png);
+	background-attachment: fixed;
+}
+body {
+	font-family: $font-family_1;
+	font-size: 12px;
+	text-align: center;
+	background-color: $background-color_1;
+	background-image: url(../imagenes/huella-perro.png);
+	background-attachment: fixed;
+}
+
+h1 {
+	color: $color_3;
+	font-style: italic;
+}
+
+li {
+	list-style: none;
+}
+
+.imagen {
+	padding-top: 40px;
+	border-radius: 50%;
+}
+
+.texto-centrado {
+	text-align: center;
+}

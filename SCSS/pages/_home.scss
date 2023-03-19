@@ -1,0 +1,48 @@
+@use '/custom' as *;
+
+
+.tarjeta-inicio {
+	border: 1px solid gray;
+	border-radius: 8px;
+	padding: 1rem;
+	width: 20rem;
+	margin: auto;
+	background-color: $background-color_4;
+}
+.tarjetas {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding: 20px 40px;
+}
+.subtitulo-card-inicio1 {
+	color: $color_4;
+}
+.subtitulo-card-inicio2 {
+	color: $color_5;
+}
+
+.boton1 {
+	background-color: $background-color_5;
+	@include boton;
+	&:hover {
+		background-color: $background-color_6;
+		@include shadow-transform;
+	}
+}
+.boton2 {
+	background-color: $background-color_7;
+	@include boton;
+	&:hover {
+		background-color: $background-color_8;
+		@include shadow-transform;
+	}
+}
+.boton3 {
+	background-color: $background-color_9;
+	@include boton;
+	&:hover {
+		background-color: $background-color_10;
+		@include shadow-transform;
+	}
+}
